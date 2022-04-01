@@ -1,0 +1,64 @@
+.*{
+	box-sizing: border-box;
+}
+.SlideShow-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+	background: red;
+	margin: 10px;
+}
+.SlideShow-item{
+
+}
+.SlideShow-items{
+	text-align: center;
+	position: absolute;
+	transform: translate(-50%,-50%) scale(0);
+
+}
+.SlideShow-items.current{
+	transform: translate(-50%,-50%) scale(1);
+}
+
+.box-container{  /*ata just show up korar jonno na dileo problem hoto na*/
+	display: block;
+	margin: 10px;
+}
+.box-containers{  /*aktu vinno vabe sajiye nilam */
+	display: flex;  /*a*/
+	justify-content: center; /*a ai 3 tar kaj text align center akai kore*/
+	align-items: center; /*a*/
+	text-align: center;  /*akhane ai ta --Or \ Othoba-- oi 3 ta j kono 1 ta dilei same kaj korbe */
+    width: 100%;
+    flex-wrap: wrap;  /* flex wrap na dile  @media scree kaj kore na */
+
+}
+.box-items{
+	margin: 5px;
+	padding: 7px;
+	box-shadow: 0 4px 16px 0 rgba(0, .0, .0, 1.0);
+	width: 23%;
+
+}
+
+@media screen and (max-width: 992px) {  
+	.box-items{
+	width: 48%;
+	margin: 5px;
+	padding: 7px;
+	box-shadow: 0 4px 16px 0 rgba(0, .0, .0, 1.0);
+  }
+}
+
+@media screen and (max-width: 600px) {
+	.box-items{
+	width: 90%
+	margin: 5px;
+	padding: 7px;
+	box-shadow: 0 4px 16px 0 rgba(0, .0, .0, 1.0);
+
+  }
+}
+
